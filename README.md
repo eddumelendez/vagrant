@@ -2,6 +2,9 @@
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
+
+vagrant box add centos64min http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box
+
 ## mongodb
 
 ```
@@ -15,5 +18,13 @@ vagrant up standalone
 ```
 cd mysql
 puppet module install puppetlabs-mysql --target-dir modules
+vagrant up standalone
+```
+
+## tomcat
+
+```
+cd tomcat
+puppet module install puppetlabs-tomcat --target-dir modules
 vagrant up standalone
 ```

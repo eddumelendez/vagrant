@@ -28,3 +28,15 @@ cd tomcat
 puppet module install puppetlabs-tomcat --target-dir modules
 vagrant up standalone
 ```
+
+## tomcat
+
+```
+cd tomcat_farm
+puppet module install camptocamp-augeas --target-dir modules
+puppet module install puppetlabs-tomcat --target-dir modules
+puppet module upgrade puppetlabs-stdlib --target-dir modules
+vagrant up standalone
+vagrant halt
+vagrant up --provision
+```

@@ -5,6 +5,21 @@
 
 vagrant box add centos64min http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box
 
+## activemq
+
+```
+cd activemq
+puppet module install puppetlabs-activemq --target-dir modules
+vagrant up standalone
+```
+
+## jenkins
+```
+cd jenkins
+puppet module install rtyler-jenkins --target-dir modules
+vagrant up standalone
+```
+
 ## mongodb
 
 ```

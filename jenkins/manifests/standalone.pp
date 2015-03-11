@@ -10,6 +10,9 @@ node 'standalone' {
     "disk-usage" : ;
     "durable-task" : ;
     "parameterized-trigger" : ;
+    "parallel-test-executor" : ;
+    "junit" :
+      version => 'latest';
     "mailer" :
       version => 'latest';
     "jquery" : ;
